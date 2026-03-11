@@ -21,6 +21,10 @@ header{
     justify-content: space-between;
 }
 
+header h1{
+    display: none;
+}
+
 #container_botoes_navbar{
     width: 30%;
     /* background-color: #F2FF58; */
@@ -38,6 +42,7 @@ header{
 }
 
 #container_home img{
+    display: none;
     width: 45px;
     height: 20px;
     cursor: pointer;
@@ -473,9 +478,14 @@ header{
 
 header{
     /* background-color: red; */
-    height: auto;
+    /* height: auto; */
     justify-content: space-between;
-    padding: 10px;
+}
+
+header h1{
+    color: #F2FF58;
+    display: flex;
+    font-weight: 1;
 }
 
 #container_botoes_navbar a{
@@ -484,6 +494,7 @@ header{
 
 #container_botoes_navbar button{
     /* background-color: red; */
+    height: 40px;
     width: 100%;
 }
 
@@ -548,6 +559,10 @@ header{
     flex-direction: column;
     align-items: center;
     gap: 20px;
+}
+
+#container_fale_conosco{
+    height: auto;
 }
 
 #container_fale_conosco p{

@@ -40,6 +40,10 @@ header{
     z-index: 5;
 }
 
+header button{
+    display: none;
+}
+
 #container_home{
     width: 6%;
     display: flex;
@@ -563,7 +567,11 @@ header{
 }
 
 #container_botao_login button:hover{
-    opacity: 0.9;
+    background-color: #022425;
+    color: #E4F24F;
+    border-color: #E4F24F;
+    transition: 0.7s;
+    
 }
 
 @media screen and (max-width: 1200px){
