@@ -319,6 +319,10 @@ header h1{
 }
 
 #sub_container_botao button{
+    display: none;
+}
+
+#sub_container_botao button{
     background-color: transparent;
     border-color: #F2FF58;
     color: white;
