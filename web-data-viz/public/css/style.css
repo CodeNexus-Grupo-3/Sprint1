@@ -11,7 +11,11 @@ b{
 
 header{
     background-color: #022425;
-    height: 6vh;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.35);
+    position: relative;
+    z-index: 5;
+    height: 8vh;
+    min-height: 70px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -23,11 +27,25 @@ header{
     display: flex;
     justify-content: space-evenly;
 }
-
+#container_home a{
+    width: 100%;
+    height: 100%;
+}
 #container_botoes_navbar a{
     text-decoration: none;
-    color: #F2FF58;
+    color: #F2FF58; 
     
+}
+
+#container_home img{
+    width: 45px;
+    height: 20px;
+    cursor: pointer;
+}
+
+
+#container_botoes_navbar a:hover{
+    color: #C6D34C;
 }
 
 #container_botoes_navbar button{
@@ -36,6 +54,17 @@ header{
     color: #F2FF58;
     font-family: "Goldman", sans-serif;
     width: 15%;
+}
+
+#container_botoes_navbar button:hover{
+    background-color: #F2FF58;
+    color: #022425;
+    border-color: #022425;
+    transition: 0.7s;
+}
+
+ #container_botoes_navbar a{
+    font-size: 20px;
 }
 
 #container_home{
@@ -112,7 +141,7 @@ header{
 }
 
 #sub_container_texto p{
-    width: 67%;
+    width: 90%;
     text-align: justify;
     color: white;
 
@@ -153,7 +182,7 @@ header{
     align-items: center;
     justify-content: center;
     gap: 20px;
-
+    
     width: 100%;
     padding: 60px 0;
     background-color: #022425;
@@ -200,8 +229,15 @@ header{
     display: flex;
     justify-content: center;
     background-color: #022425;
-    height: 100%;
+    height: auto;
     width: 100%;
+}
+
+#container_funcionalidades_fotos picture{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #container_funcionalidades_fotos img{
@@ -229,7 +265,7 @@ header{
     flex-direction: column;
     align-items: center;
     background-color: #022425;
-    height: 65%;
+    height: 70%;
     width: 100%;
     justify-content: space-evenly;
     /* background-image: url(Mask\ group.svg); */
@@ -284,6 +320,13 @@ header{
     font-family: "Goldman", sans-serif;
     width: 20%;
     font-size: 25px;
+}
+
+#sub_container_botao button:hover{
+    background-color: #F2FF58;
+    color: #022425;
+    border-color: #022425;
+    transition: 0.7s;
 }
 
 #container_footer {
@@ -421,6 +464,127 @@ header{
 }
 
 .footer_contato_info span{
-    font-size: 30px;
+    font-size: 25px;
     font-weight: 100;
+}
+
+@media (max-width: 768px) {
+
+
+header{
+    /* background-color: red; */
+    height: auto;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+#container_botoes_navbar a{
+    display: none;
+}
+
+#container_botoes_navbar button{
+    /* background-color: red; */
+    width: 100%;
+}
+
+#container_home{
+    width: auto;
+}
+
+#container_banner{
+    height: auto;
+    background-color: #022425;
+}
+
+#container_quem_somos{
+    flex-direction: column-reverse;
+    height: auto;
+}
+
+#sub_container_imagem{
+    width: 100%;
+}
+
+#sub_container_texto{
+    width: 100%;
+    justify-content: center;
+    
+}
+
+#sub_container_texto p{
+    width: 90%;
+}
+
+#sub_container_texto h1{
+    text-align: center;
+}
+
+#sub_sub_container_texto{
+    align-items: center;
+    /* background-color: red; */
+}
+
+#container_slogan h1{
+    text-align: center;
+    font-size: 12px;
+}
+
+#container_pilares{
+    height: auto;
+}
+
+#container_funcionalidades_fotos picture{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#container_funcionalidades_fotos img{
+    width: 300px;
+}
+
+
+#sub_container_texto_fale_conosco{
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+#container_fale_conosco p{
+    width: 85%;
+}
+
+#sub_container_botao button{
+    width: 60%;
+    font-size: 18px;
+}
+
+#container_texto_lenda{
+    text-align: center;
+    height: auto;
+    gap: 15px;
+}
+
+#container_texto_lenda h1{
+    text-align: center;
+    font-size: 25px;
+    width: 90%;
+}
+
+#container_codenexus h1{
+    font-size: 30px;
+}
+
+#container_footer::after{
+    height: 50%;
+}
+
+.footer_contato_info{
+    height: auto;
+}
+
+.footer_contato_info span{
+    font-size: 18px;
+}
+
 }
